@@ -3,6 +3,7 @@ import { addNewMentor,getAllMentors } from '../controllers/mentor.js';
 
 const router = express.Router();
 
+// 1. Write API to create Mentor
 router.post("/newMentor", async (req, res) => {
     try {
         const newMentor = await addNewMentor(req);
